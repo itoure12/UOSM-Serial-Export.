@@ -1,0 +1,5 @@
+# Build output: rebuild from serial_export.c
+*.exe
+
+# Captures produced by serial_export
+*.csv
