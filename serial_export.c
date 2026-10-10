@@ -185,6 +185,7 @@ int main(int argc, char** argv) {
                 if (len > 0) {  /* skip empty lines */
                     write_csv_line(out, line);
                     puts(line); /* echo to the console, like the Serial Monitor */
+                    fflush(stdout); /* show it now, not when the buffer fills or the program exits */
                     count++;
                 }
                 len = 0;
